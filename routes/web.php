@@ -28,5 +28,8 @@ Route::get('contact','BasicController@contact');
 //  Login
 Route::get('login','BasicController@login');
 
+//  Read Employee
+Route::get('employees','BasicController@employees');
+
 
 
