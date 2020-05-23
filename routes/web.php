@@ -31,5 +31,11 @@ Route::get('login','BasicController@login');
 //  Read Employee
 Route::get('employees','BasicController@employees');
 
+//  Read Employee with Eloquent
+Route::get('employeelist','BasicController@employeelist');
+
+//  Read Employee with DeptManager
+Route::get('view_deptmanager','EmployeeController@view_deptmanager');
+
 
 

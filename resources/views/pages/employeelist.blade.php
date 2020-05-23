@@ -26,9 +26,9 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($emps as $key => $emp)
+            @foreach ($emps as $emp)
                 <tr>
-                    <td class="text-center">{{$emps->firstitem()+$key}}</td>
+                    <td class="text-center">{{$emp->id}}</td>
                     <td>{{$emp->fullname}}</td>
                     <td>{{$emp->gender}}</td>
                     <td>{{$emp->email}}</td>

@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 
+// Load Model
+use App\Model\Employee;
+
+
 class BasicController extends Controller
 {
     // Function Home
@@ -91,12 +95,33 @@ class BasicController extends Controller
         // print_r($emp);
 
         ///// ส่งค่าไปยัง View /////            
-        $emps = DB::table('employees')->get();
+        // $emps = DB::table('employees')->get();
+       
         // foreach ($emps as $emp) {
         //     echo "<b>".$emp->fullname."</b><BR><small>".$emp->email."</small><br><br>";
         // }
-        
+
+        $emps = DB::table('employees')->paginate(3);        
+
         return view('pages.employee')->with('emps',$emps); // สร้างตัวแปร แล้วก็ใส่ Data  
+
+    }
+
+    // Function Employeelist
+    public function employeelist(){
+        // $employees = Employee::all();
+
+        // with condition
+        // $employees = Employee::where('age',37)->get();
+        // $employees = Employee::where('age',37)->first();
+
+        // Order By
+        // $employees = Employee::where('status',1)->orderBy('id','desc')->get();
+
+
+        
+        $employees = Employee::paginate(3);
+        return view('pages.employeelist')->with('emps',$employees);
 
     }
 
