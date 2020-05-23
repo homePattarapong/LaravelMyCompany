@@ -31,17 +31,17 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-4 text-center">
-            <i class="fas fa-home fa-3x text-success"></i>
+            <i class="fad fa-home-lg fa-3x text-success"></i>
             <h1>Home</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quibusdam voluptatibus quae explicabo libero asperiores, harum enim, magnam sed vel quod sequi iusto, dolores tempore veniam! Amet numquam necessitatibus nobis!</p>
         </div>
         <div class="col-md-4 text-center">
-            <i class="fas fa-concierge-bell fa-3x text-warning"></i>
+            <i class="fad fa-store-alt fa-3x text-warning"></i>
             <h1>About us</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim accusantium omnis consectetur praesentium natus. Dignissimos repellendus placeat rem delectus pariatur ducimus quibusdam, exercitationem at quia! Tempora quae voluptate doloremque magni.</p>
         </div>
         <div class="col-md-4 text-center">
-            <i class="fas fa-cloud-showers-heavy fa-3x text-danger"></i>
+            <i class="fad fa-biking-mountain fa-3x text-danger"></i>
             <h1>Services</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam tempora voluptates, quia magni ipsum unde? Cumque deleniti consequuntur minus quae reprehenderit autem aliquid, saepe quasi fuga nesciunt adipisci labore dolorum?</p>
         </div>

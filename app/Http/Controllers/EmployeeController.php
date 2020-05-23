@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 // Load Model
 use App\Model\DeptManager;
 use App\Model\Employee;
+use App\Model\Department;
 
 class EmployeeController extends Controller
 {
@@ -25,7 +26,11 @@ class EmployeeController extends Controller
         //  print_r($dep_manager);
         //  echo "</pre>";
 
-        $dep_managers = DeptManager::all();
+        $dep_managers = DeptManager::paginate(10);
+        //$dep_managers = DeptManager::where('dept_no','=','d004')->first();        
+        
         return view('pages.deptmanager')->with('dep_managers',$dep_managers);
+
+        
     }
 }
